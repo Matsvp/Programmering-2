@@ -3,7 +3,22 @@ public class Student {
     private String lastName;
     private int age;
     private String studentId;
+    private String birthNumber = "12345678910";
 
+    public Student(){
+
+    }
+
+    public Student(String firstName, String lastName, int age, String studentId){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.studentId = studentId;
+    }
+
+    public String getBirthNumber(){
+        return birthNumber;
+    }
     // Getter and Setter for firstName
     public String getFirstName() {
         return firstName;
